@@ -11,8 +11,8 @@
 #      - 8000:80
 #    networks:
 #      - laravel
-networks:
-  laravel:
+#networks:
+#  laravel:
 
 version: '3'
 services:

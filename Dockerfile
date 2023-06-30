@@ -11,10 +11,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip \
     && docker-php-ext-install zip
-
-# Configura el archivo de host virtual de Apache
-COPY . /var/www/html
-
+    
 # Habilita el módulo de reescritura de Apache
 RUN a2enmod rewrite
 
