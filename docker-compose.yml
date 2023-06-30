@@ -1,18 +1,42 @@
-version: '3'
-services:
-  php:
-    build:
-      context: .  
-      dockerfile: Dockerfile
-    container_name: evaluacion_academica_docente_php
-    volumes:
-      - .:/var/www/html
-    ports:
-      - 9000:80
-    networks:
-      - laravel
+#version: '3'
+#services:
+#  php:
+#    build:
+#      context: ./  
+#      dockerfile: Dockerfile
+#    container_name: evaluacion_academica_docente_php
+#    volumes:
+#      - .:/var/www/html
+#    ports:
+#      - 8000:80
+#    networks:
+#      - laravel
 networks:
   laravel:
+
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 9000:9000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 #services:
 #  app:
 #    build:
