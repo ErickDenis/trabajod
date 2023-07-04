@@ -2,7 +2,7 @@
 
 @section('auth_body')
 
-    <form method="POST" action="{{ route('register.company.submit') }}">
+    <form method="POST" action="{{ route('register.postulant.submit') }}">
         @csrf
 
         <div class="row">
@@ -21,24 +21,20 @@
         </div>
 
         <div class="row">
-            <label for="name_of_company">Nombre de la empresa</label>
-            <input class="form-control" id="name_of_company" type="text" name="name_of_company" value="{{ old('name_of_company') }}" required>
+            <label for="name">Nombre Completo</label>
+            <input class="form-control" id="name" type="text" name="name" value="{{ old('name') }}" required>
         </div>
 
         <div class="row">
-            <label for="descripcion">Descripcion</label>
-            <input class="form-control" id="descripcion" type="text" name="descripcion" value="{{ old('descripcion') }}">
+            <label for="last_name">Apellido Completo</label>
+            <input class="form-control" id="last_name" type="text" name="last_name" value="{{ old('last_name') }}" required>
+        </div>
+        
+        <div class="row">
+            <label for="birthdate">Fecha de Nacimiento</label>
+            <input class="form-control" type="date" id="birthdate" name="birthdate" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
         </div>
 
-        <div class="row">
-            <label for="path_of_photo">Foto</label>
-            <input class="form-control" id="path_of_photo" type="text" name="path_of_photo" value="{{ old('path_of_photo') }}">
-        </div>
-
-        <div class="row">
-            <label for="address">Dirreccion</label>
-            <input class="form-control" id="address" type="text" name="address" value="{{ old('address') }}">
-        </div>
         <div class="row" style="padding-top: 10px;">
             <button class="btn btn-block btn-flat btn-primary" type="submit">Registrar</button>
         </div>

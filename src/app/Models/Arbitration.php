@@ -25,6 +25,6 @@ class Arbitration extends Model
 
     public function stage()
     {
-        return $this->belongsTo(Stage::class);
+        return $this->hasOne(Stage::class);
     }
 }

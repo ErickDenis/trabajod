@@ -67,7 +67,7 @@ class CompanyController extends Controller
         $user = User::create([
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'type' => 'empresa',
+            'type' => 'Empresa',
         ]);
 
         // Crear la empresa relacionada

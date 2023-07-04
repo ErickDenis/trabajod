@@ -37,10 +37,4 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-
-    public function show()
-    {
-        // Aquí puedes colocar el código necesario para mostrar el formulario de inicio de sesión
-        return view('auth.login');
-    }
 }

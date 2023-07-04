@@ -19,4 +19,9 @@ class Stage extends Model
         'finish_date',
         'status',
     ];
+
+    public function arbitration()
+    {
+        return $this->belongsTo(Arbitration::class);
+    }
 }

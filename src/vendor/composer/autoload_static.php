@@ -552,6 +552,7 @@ class ComposerStaticInit4cb42bd55ae53b1351c88402f9c65e49
         'App\\Http\\Controllers\\PostulantController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostulantController.php',
         'App\\Http\\Controllers\\PostulantVacantController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostulantVacantController.php',
         'App\\Http\\Controllers\\ProfessionalProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfessionalProfileController.php',
+        'App\\Http\\Controllers\\StageController' => __DIR__ . '/../..' . '/app/Http/Controllers/StageController.php',
         'App\\Http\\Controllers\\VacantController' => __DIR__ . '/../..' . '/app/Http/Controllers/VacantController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',

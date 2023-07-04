@@ -28,7 +28,7 @@ class Vacant extends Model
         return $this->hasMany(Condition::class);
     }
 
-    public function product_vacants() {
+    public function postulant_vacants() {
         return $this->belongsToMany(Postulant_Vacant::class);
     }
 }

@@ -21,7 +21,7 @@ class Postulant extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function product_vacants() {
+    public function postulant_vacants() {
         return $this->belongsToMany(Postulant_Vacant::class);
     }
 }

@@ -24,6 +24,7 @@ return array(
     'App\\Http\\Controllers\\PostulantController' => $baseDir . '/app/Http/Controllers/PostulantController.php',
     'App\\Http\\Controllers\\PostulantVacantController' => $baseDir . '/app/Http/Controllers/PostulantVacantController.php',
     'App\\Http\\Controllers\\ProfessionalProfileController' => $baseDir . '/app/Http/Controllers/ProfessionalProfileController.php',
+    'App\\Http\\Controllers\\StageController' => $baseDir . '/app/Http/Controllers/StageController.php',
     'App\\Http\\Controllers\\VacantController' => $baseDir . '/app/Http/Controllers/VacantController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
