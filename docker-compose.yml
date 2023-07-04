@@ -3,7 +3,7 @@ volumes:
   psysh-store:
 
 services:
-  appe:
+  apperick:
     build:
       context: .
       dockerfile: ./infra/docker/php/Dockerfile
